@@ -62,6 +62,7 @@ Ensure the ESP32 firmware is configured with the correct Wi-Fi credentials and s
 
 ## Results
 The system successfully detects wake-up words, processes voice commands via Wit.ai, and executes the commands on the ESP32.
+![IMG_20240903_011505_242](https://github.com/user-attachments/assets/49147938-3027-42c8-8105-403b21b7fe67)
 ![IMG_20240903_004034_837](https://github.com/user-attachments/assets/954f3aec-e405-4ac4-8fd0-63defa5a812c)
 
 
