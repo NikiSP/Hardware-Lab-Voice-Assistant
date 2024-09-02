@@ -19,39 +19,50 @@ This project aims to design and build a voice-controlled assistant using the ESP
 - Platform.io: a development environment for microcontrollers like the Arduino
 
 ## Implementation Details
+# System Overview
+The system consists of three main components:
 
-In this section, you will explain how you completed your project. It is recommended to use pictures to demonstrate your system model and implementation.
+Wake-Up Word Detection: The ESP32 continuously monitors audio input to detect a predefined wake-up word.
+Command Recording & Processing: Upon detecting the wake-up word, the system records the user's voice command and sends it to the Django server.
+Command Execution: The processed command from Wit.ai is sent back to the ESP32 for execution.
 
+# ESP32 Implementation
+The ESP32 handles wake-up word detection and interfaces with the server via Wi-Fi. The I2S protocol is used for high-quality audio data transmission between the microphone and the ESP32. you can find the code implementation in esp32 folder.
 
-Feel free to use sub-topics for your projects. If your project consists of multiple parts (e.g. server, client, and embedded device), create a separate topic for each one.
+# Local Django Server
+The Django server acts as a bridge between the ESP32 and Wit.ai, managing the voice command processing requests and returning the results to the ESP32. you can find the code implementation in server foulder.
+
+# Wit.ai Integration
+Wit.ai processes the audio file, recognizes the command, and returns the result to the local server.
 
 ## How to Run
+Prerequisites
+- ESP32 development environment set up with PlatformIO or Arduino IDE.
+- Django server installed and running locally.
+- Wit.ai account and API token configured.
 
-In this part, you should provide instructions on how to run your project. Also if your project requires any prerequisites, mention them. 
-
-#### Examples:
 #### Build Project
-Your text comes here
 ```bash
-  build --platform=OvmfPkg/OvmfPkgX64.dsc --arch=X64 --buildtarget=RELEASE --tagname=GCC5
+platformio run --target upload
 ```
 
 #### Run server
-Your text comes here
+Navigate to the server directory and run:
 ```bash
-  pyhton server.py -p 8080
+  python manage.py runserver IPv4address:port
 ```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `-p` | `int` | **Required**. Server port |
-
+you can find your IPv4 address by following command
+```bash
+  ipconfig
+```
+# Configuration
+Ensure the ESP32 firmware is configured with the correct Wi-Fi credentials and server IP address.
 
 
 ## Results
-In this section, you should present your results and provide an explanation for them.
+The system successfully detects wake-up words, processes voice commands via Wit.ai, and executes the commands on the ESP32.
+Below is an example of the system in action:
 
-Using image is required.
 
 ## Related Links
 Some links related to your project come here.
