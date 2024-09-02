@@ -19,24 +19,24 @@ This project aims to design and build a voice-controlled assistant using the ESP
 - Platform.io: a development environment for microcontrollers like the Arduino
 
 ## Implementation Details
-# System Overview
+### System Overview
 The system consists of three main components:
 
 Wake-Up Word Detection: The ESP32 continuously monitors audio input to detect a predefined wake-up word.
 Command Recording & Processing: Upon detecting the wake-up word, the system records the user's voice command and sends it to the Django server.
 Command Execution: The processed command from Wit.ai is sent back to the ESP32 for execution.
 
-# ESP32 Implementation
-The ESP32 handles wake-up word detection and interfaces with the server via Wi-Fi. The I2S protocol is used for high-quality audio data transmission between the microphone and the ESP32. you can find the code implementation in esp32 folder.
+### ESP32 Implementation
+The ESP32 handles wake-up word detection and interfaces with the server via Wi-Fi. The I2S protocol is used for high-quality audio data transmission between the microphone and the ESP32. you can find the code implementation in ESP32 folder.
 
-# Local Django Server
-The Django server acts as a bridge between the ESP32 and Wit.ai, managing the voice command processing requests and returning the results to the ESP32. you can find the code implementation in server foulder.
+### Local Django Server
+The Django server acts as a bridge between the ESP32 and Wit.ai, managing the voice command processing requests and returning the results to the ESP32. you can find the code implementation in Server foulder.
 
-# Wit.ai Integration
+### Wit.ai Integration
 Wit.ai processes the audio file, recognizes the command, and returns the result to the local server.
 
 ## How to Run
-Prerequisites
+### Prerequisites
 - ESP32 development environment set up with PlatformIO or Arduino IDE.
 - Django server installed and running locally.
 - Wit.ai account and API token configured.
