@@ -63,8 +63,8 @@ Some links related to your project come here.
 
 ## Authors
 Authors and their github link come here.
-- [@asemnaehnafe](https://github.com/asemanehnafe)
-- [@nikisepasian](https://github.com/Sharif-University-ESRLab)
-- [@erfansalime](https://github.com/Sharif-University-ESRLab)
+- [@asemanehnafe](https://github.com/asemanehnafe)
+- [@nikisepasian](https://github.com/NikiSP)
+- [@erfansalima](https://github.com/erfansalima)
 
 
