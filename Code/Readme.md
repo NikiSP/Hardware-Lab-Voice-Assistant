@@ -1,4 +1,5 @@
 # Code
+The code is sectioned into three main parts:
 
 ## Model
 The wake word detection model is implemented using a neural network. This model is responsible for detecting the specific wake word ("Marvin") from audio input, triggering the ESP32 to start processing further commands.
