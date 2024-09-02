@@ -1,6 +1,6 @@
 
 ![sharif logo](https://github.com/user-attachments/assets/ddb1306b-9592-427d-9dc0-a8d04ecd842b| width=100)
-
+<img src="[https://github.com/user-attachments/assets/ddb1306b-9592-427d-9dc0-a8d04ecd842b]" width="100" height="100"/>
 
 # Voice Assistant with ESSP32 and wit.ai
 
