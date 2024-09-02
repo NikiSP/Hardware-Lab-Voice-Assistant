@@ -2,19 +2,21 @@
 ![Logo](https://via.placeholder.com/600x150?text=Your+Logo+Here+600x150)
 
 
-# Project Title
+# Voice Assistant with ESSP32 and wit.ai
 
-A brief description of what this project does and who it's for comes here.
+This project aims to design and build a voice-controlled assistant using the ESP32 microcontroller, I2S microphone. The system listens for a specific wake-up word and, once detected, records the user's voice command, sends it to a local Django server, and then forwards it to Wit.ai for processing. The processed command is returned to the ESP32 for execution.there are three main components:
+- Wake word detection
+- Audio capture and Intent Recognition
+- Intent Execution
 
 
 ## Tools
-In this section, you should mention the hardware or simulators utilized in your project.
-- Qemu
-- Gem5
-- ESP32
-- Raspberry Pi 3B
-- Temperature Sensor
-
+- ESP32: Microcontroller for voice command processing and communication.
+- I2S Microphone: Captures audio for wake-up word detection and command recognition.
+- LED and resistor: for intent execution
+- Django: Local server to interface between ESP32 and Wit.ai.
+- Wit.ai: Online service for voice command recognition.
+- Platform.io: a development environment for microcontrollers like the Arduino
 
 ## Implementation Details
 
@@ -53,13 +55,16 @@ Using image is required.
 
 ## Related Links
 Some links related to your project come here.
- - [EDK II](https://github.com/tianocore/edk2)
- - [ESP32 Pinout](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
- - [Django Doc](https://docs.djangoproject.com/en/5.0/)
+- [similar project](https://github.com/atomic14/diy-alexa?tab=readme-ov-file)
+- [wit.ai](https://wit.ai/)
+- [Django Doc](https://docs.djangoproject.com/en/5.0/)
+- [ESP32 Pinout](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
 
 
 ## Authors
 Authors and their github link come here.
-- [@Author1](https://github.com/Sharif-University-ESRLab)
-- [@Author2](https://github.com/Sharif-University-ESRLab)
+- [@asemnaehnafe](https://github.com/asemanehnafe)
+- [@nikisepasian](https://github.com/Sharif-University-ESRLab)
+- [@erfansalime](https://github.com/Sharif-University-ESRLab)
+
 
