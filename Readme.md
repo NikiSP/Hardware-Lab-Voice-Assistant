@@ -1,5 +1,5 @@
 
-![Logo](https://via.placeholder.com/600x150?text=Your+Logo+Here+600x150)
+![sharif logo](https://github.com/user-attachments/assets/ddb1306b-9592-427d-9dc0-a8d04ecd842b)
 
 
 # Voice Assistant with ESSP32 and wit.ai
@@ -14,6 +14,7 @@ This project aims to design and build a voice-controlled assistant using the ESP
 - ESP32: Microcontroller for voice command processing and communication.
 - I2S Microphone: Captures audio for wake-up word detection and command recognition.
 - LED and resistor: for intent execution
+- python3+: to run the server
 - Django: Local server to interface between ESP32 and Wit.ai.
 - Wit.ai: Online service for voice command recognition.
 - Platform.io: a development environment for microcontrollers like the Arduino
@@ -42,9 +43,10 @@ Prerequisites
 - Wit.ai account and API token configured.
 
 #### Build Project
-```bash
-platformio run --target upload
-```
+you can use vscode build and upload project to esp32:
+![20240903_004334](https://github.com/user-attachments/assets/531cc988-5456-4979-8656-851b30bd35b7)
+serial monitor the output:
+![20240903_004402](https://github.com/user-attachments/assets/79fa5d42-a69a-44cb-9cfc-d62085bd94bc)
 
 #### Run server
 Navigate to the server directory and run:
@@ -61,7 +63,7 @@ Ensure the ESP32 firmware is configured with the correct Wi-Fi credentials and s
 
 ## Results
 The system successfully detects wake-up words, processes voice commands via Wit.ai, and executes the commands on the ESP32.
-Below is an example of the system in action:
+![IMG_20240903_004034_837](https://github.com/user-attachments/assets/954f3aec-e405-4ac4-8fd0-63defa5a812c)
 
 
 ## Related Links
