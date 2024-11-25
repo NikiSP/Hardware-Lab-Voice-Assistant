@@ -80,4 +80,5 @@ Authors and their github link come here.
 - [@erfansalima](https://github.com/erfansalima)
 - [@asemanehnafe](https://github.com/asemanehnafe)
 
+You can find a more in detail explanation of this project's implementation details and the results we achieved in ["Project Report"](./Document/Project_Report.pdf).
 
